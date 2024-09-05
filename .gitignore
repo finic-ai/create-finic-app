@@ -1,0 +1,6 @@
+**/__pycache__/
+**/.venv/
+**/.env
+input.json
+secrets.json
+example.png
