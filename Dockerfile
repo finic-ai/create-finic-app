@@ -22,6 +22,11 @@ COPY . .
 # then install our own module
 RUN poetry install --only main
 
+# Install playwright dependencies
+RUN poetry run playwright install chromium
+
+RUN poetry run playwright install-deps 
+
 EXPOSE 8080
 
 ENTRYPOINT [ "poetry", "run", "start" ]

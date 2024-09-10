@@ -21,8 +21,8 @@ def main(input: Dict):
 
         # Navigate to login page and login
         page.click("text=Already have an account? Sign in")
-        page.fill('input[name="email"]', secrets["email"])
-        page.fill('input[name="password"]', secrets["password"])
+        page.fill('input[name="email"]', "email")
+        page.fill('input[name="password"]', "password")
         page.click('button[type="submit"]')
 
         # Wait for the home page to load
