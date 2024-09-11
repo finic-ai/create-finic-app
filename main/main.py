@@ -31,3 +31,5 @@ def main(input: Dict):
         # Take a screenshot and close the browser
         page.screenshot(path="example.png")
         browser.close()
+
+    return {"message": "Screenshot taken successfully!"}
