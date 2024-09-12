@@ -123,13 +123,13 @@ files = [
 
 [[package]]
 name = "finicapi"
-version = "0.1.0"
+version = "0.1.14"
 description = "Finic.ai is a platform for deploying integrations and workflow automations in Python. This is the Python client for Finic"
 optional = false
 python-versions = "*"
 files = [
-    {file = "finicapi-0.1.0-py3-none-any.whl", hash = "sha256:6aa11a7069bda7dba32ec296d120c77a5ff8d5d5d5a86c50091c92bb97020ac0"},
-    {file = "finicapi-0.1.0.tar.gz", hash = "sha256:43236a4dd361adb740eca5782e5f2f905e72a596ca288ce0b2d36a79b851a425"},
+    {file = "finicapi-0.1.14-py3-none-any.whl", hash = "sha256:5651dd34a0eada177fe26a748a39e32301d8943f76b0a4294d62039572a0f3a1"},
+    {file = "finicapi-0.1.14.tar.gz", hash = "sha256:d598005189b565797cc4cf06bc5f51df557a7f760325d5f1a0452a1890ee405e"},
 ]
 
 [package.dependencies]
@@ -378,6 +378,20 @@ typing-extensions = "*"
 dev = ["black", "build", "flake8", "flake8-black", "isort", "jupyter-console", "mkdocs", "mkdocs-include-markdown-plugin", "mkdocstrings[python]", "pytest", "pytest-asyncio", "pytest-trio", "sphinx", "toml", "tox", "trio", "trio", "trio-typing", "twine", "twisted", "validate-pyproject[all]"]
 
 [[package]]
+name = "python-dotenv"
+version = "1.0.1"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "python-dotenv-1.0.1.tar.gz", hash = "sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca"},
+    {file = "python_dotenv-1.0.1-py3-none-any.whl", hash = "sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "requests"
 version = "2.32.3"
 description = "Python HTTP for Humans."
@@ -428,5 +442,5 @@ zstd = ["zstandard (>=0.18.0)"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.12"
-content-hash = "95c5aea15db8ebab0d310c552762e079ebaf4745dd975890cfd9ce753491e599"
+python-versions = "^3.11"
+content-hash = "93886411e4c1aca20f2db75cf755d21411f1d3dda19692ef97d857432925cc69"

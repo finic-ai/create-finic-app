@@ -3,10 +3,14 @@ from typing import Dict
 from models import InputSchema
 from playwright.sync_api import sync_playwright, Playwright
 import os
-from finicapi import Finic
+from finicapi import Finic, FinicEnvironment
+from dotenv import load_dotenv
 
-FINIC_API_KEY = os.environ.get("FINIC_API_KEY")
-finic = Finic(FINIC_API_KEY)
+load_dotenv(override=True)
+FINIC_API_KEY = os.getenv("FINIC_API_KEY")
+finic = Finic(
+    api_key=FINIC_API_KEY,
+)
 
 
 @finic.workflow_entrypoint

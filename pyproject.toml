@@ -11,7 +11,8 @@ python = "^3.11"
 requests = "^2.32.3"
 pydantic = "^2.8.2"
 playwright = "^1.46.0"
-finicapi = "^0.1.0"
+python-dotenv = "^1.0.1"
+finicapi = "^0.1.14"
 
 [tool.poetry.scripts]
 start = "main:main"
