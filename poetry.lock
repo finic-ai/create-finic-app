@@ -123,13 +123,13 @@ files = [
 
 [[package]]
 name = "finicapi"
-version = "0.1.14"
+version = "0.1.15"
 description = "Finic.ai is a platform for deploying integrations and workflow automations in Python. This is the Python client for Finic"
 optional = false
 python-versions = "*"
 files = [
-    {file = "finicapi-0.1.14-py3-none-any.whl", hash = "sha256:5651dd34a0eada177fe26a748a39e32301d8943f76b0a4294d62039572a0f3a1"},
-    {file = "finicapi-0.1.14.tar.gz", hash = "sha256:d598005189b565797cc4cf06bc5f51df557a7f760325d5f1a0452a1890ee405e"},
+    {file = "finicapi-0.1.15-py3-none-any.whl", hash = "sha256:006b279bb42a2fc8f44ad580a50ababcd26ad49779081c5f9815ddb5e144cec6"},
+    {file = "finicapi-0.1.15.tar.gz", hash = "sha256:11aa7aa6f23c49bbfa5f456bf096b6496b8d22fedc7b111a3d5ca3b4e1608e18"},
 ]
 
 [package.dependencies]
@@ -443,4 +443,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "93886411e4c1aca20f2db75cf755d21411f1d3dda19692ef97d857432925cc69"
+content-hash = "b06513f282cd04b0a3eaff3186b2673d1327bcec420ff5fb5341a88bf516a080"
