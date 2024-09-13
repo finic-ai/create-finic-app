@@ -12,7 +12,7 @@ requests = "^2.32.3"
 pydantic = "^2.8.2"
 playwright = "^1.46.0"
 python-dotenv = "^1.0.1"
-finicapi = "^0.1.15"
+finicapi = "^0.1.16"
 
 [tool.poetry.scripts]
 start = "main:main"
