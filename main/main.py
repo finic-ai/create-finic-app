@@ -18,6 +18,8 @@ def main(input: Dict):
     validated_input = InputSchema(**input)
     secrets = finic.secrets_manager.get_credentials(validated_input.user_id)
 
+    html_element = None
+
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
@@ -31,8 +33,8 @@ def main(input: Dict):
         # Wait for the home page to load
         page.wait_for_load_state("networkidle", timeout=10000)
 
-        # Take a screenshot and close the browser
-        page.screenshot(path="example.png")
+        # Get the <p> tag
+        html_element = page.inner_html("p")
         browser.close()
 
-    return {"message": "Screenshot taken successfully and saved as example.png"}
+    return {"html_element": html_element}
