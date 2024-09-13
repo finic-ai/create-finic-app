@@ -3,7 +3,7 @@ from typing import Dict
 from models import InputSchema
 from playwright.sync_api import sync_playwright, Playwright
 import os
-from finicapi import Finic, FinicEnvironment
+from finicapi import Finic
 from dotenv import load_dotenv
 
 load_dotenv(override=True)
