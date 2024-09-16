@@ -20,6 +20,8 @@ def main(input: Dict):
 
     html_element = None
 
+    print("Running the Playwright script")
+
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
