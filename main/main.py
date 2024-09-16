@@ -1,5 +1,3 @@
-import requests
-from typing import Dict
 from models import InputSchema
 from playwright.sync_api import sync_playwright, Playwright
 import os
@@ -13,14 +11,13 @@ finic = Finic(
 )
 
 
-@finic.workflow_entrypoint
-def main(input: Dict):
-    validated_input = InputSchema(**input)
-    secrets = finic.secrets_manager.get_credentials(validated_input.user_id)
+@finic.workflow_entrypoint(input_model=InputSchema)
+def main(input: InputSchema):
+    secrets = finic.secrets_manager.get_credentials(input.user_id)
 
     html_element = None
 
-    print("Running the Playwright script")
+    print("Running the Playwright script for user: ", input.user_id)
 
     with sync_playwright() as p:
         browser = p.chromium.launch()

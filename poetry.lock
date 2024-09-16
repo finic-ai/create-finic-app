@@ -138,13 +138,13 @@ pytz = "*"
 
 [[package]]
 name = "finicapi"
-version = "0.1.27"
+version = "0.1.29"
 description = "Finic.ai is a platform for deploying integrations and workflow automations in Python. This is the Python client for Finic"
 optional = false
 python-versions = "*"
 files = [
-    {file = "finicapi-0.1.27-py3-none-any.whl", hash = "sha256:ca1149fe65cf5d0c7a03f683f622c56ada3382c5432938c53a53085b5251be4a"},
-    {file = "finicapi-0.1.27.tar.gz", hash = "sha256:306d37c819850943854b54494b0e429821ce8de960764cd75f1164ba1df60849"},
+    {file = "finicapi-0.1.29-py3-none-any.whl", hash = "sha256:bd45ab172d0fe233bc39513323996c92149486e45810b1d80ceb34f7d8a757d6"},
+    {file = "finicapi-0.1.29.tar.gz", hash = "sha256:078b44f46ec32c6208196fb15532c2d67596964f2893ef9e62a4eeab695b5221"},
 ]
 
 [package.dependencies]
@@ -442,13 +442,13 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "setuptools"
-version = "75.0.0"
+version = "75.1.0"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "setuptools-75.0.0-py3-none-any.whl", hash = "sha256:791ae94f04f78c880b5e614e560dd32d4b4af5d151bd9e7483e3377846caf90a"},
-    {file = "setuptools-75.0.0.tar.gz", hash = "sha256:25af69c809d9334cd8e653d385277abeb5a102dca255954005a7092d282575ea"},
+    {file = "setuptools-75.1.0-py3-none-any.whl", hash = "sha256:35ab7fd3bcd95e6b7fd704e4a1539513edad446c097797f2985e0e4b960772f2"},
+    {file = "setuptools-75.1.0.tar.gz", hash = "sha256:d59a21b17a275fb872a9c3dae73963160ae079f1049ed956880cd7c09b120538"},
 ]
 
 [package.extras]
@@ -542,4 +542,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "26c32b64564b41c097790fb936dfccd38101246dd0d85b069b25b8fa00cd314e"
+content-hash = "f393c5ecac7f5d710916d5ddcc0beae2461af976a60348f024d2bd401acceed0"
